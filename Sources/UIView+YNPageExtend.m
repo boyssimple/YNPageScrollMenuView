@@ -54,7 +54,9 @@
 }
 
 - (void)setYn_bottom:(CGFloat)yn_bottom {
-    
+    CGRect frame = self.frame;
+    frame.origin.y = yn_bottom - frame.size.height;
+    self.frame = frame;
 }
 
 @end
