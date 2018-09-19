@@ -53,4 +53,8 @@
     return self.frame.size.height + self.frame.origin.y;
 }
 
+- (void)setYn_bottom}:(CGFloat)yn_bottom {
+    
+}
+
 @end
