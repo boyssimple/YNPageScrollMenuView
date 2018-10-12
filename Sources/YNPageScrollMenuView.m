@@ -53,7 +53,7 @@
                                    delegate:(id<YNPageScrollMenuViewDelegate>)delegate
                                currentIndex:(NSInteger)currentIndex {
     
-    frame.size.height = configration.menuHeight;
+    frame.size.height = frame.size.height<configration.menuHeight?configration.menuHeight:frame.size.height;
     frame.size.width = configration.menuWidth;
     
     YNPageScrollMenuView *menuView = [[YNPageScrollMenuView alloc] initWithFrame:frame];
